@@ -2,7 +2,7 @@ export default function OurStory() {
   return (
     <section
       id="our-story"
-      className="relative py-6 mb-16 bg-dark"
+      className="relative py-6 mb-8 bg-dark"
       style={{
         backgroundImage: "url('/images/bg-story.jpg')",
         backgroundSize: "contain",

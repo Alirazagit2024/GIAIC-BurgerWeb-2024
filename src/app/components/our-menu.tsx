@@ -1,10 +1,9 @@
 export default function OurMenu() {
   return (
     <section
-      id="our-story"
-      className="relative py-6 mb-16 bg-dark"
+      className="relative bg-dark"
       style={{
-        backgroundImage: "url('/images/menu-bg.webp')",
+        backgroundImage: "url('/images/menu-bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

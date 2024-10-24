@@ -87,7 +87,7 @@ export default function Feature() {
                   5.0
                 </span>
               </div>
-              <div className="flex flex-col gap-3 items-center justify-between sm:flex-row">
+              <div className="flex gap-3 items-center justify-between sm:flex-row">
                 <span className="text-3xl font-bold text-gray-900 dark:text-white">
                   $149{" "}
                   <del className="italic text-base text-gray-600">$179</del>
@@ -173,7 +173,7 @@ export default function Feature() {
                   4.7
                 </span>
               </div>
-              <div className="flex flex-col gap-3 items-center justify-between sm:flex-row">
+              <div className="flex gap-3 items-center justify-between sm:flex-row">
                 <span className="text-3xl font-bold text-gray-900 dark:text-white">
                   $139{" "}
                   <del className="italic text-base text-gray-600">$159</del>
@@ -260,7 +260,7 @@ export default function Feature() {
                   5.0
                 </span>
               </div>
-              <div className="flex flex-col gap-3 items-center justify-between sm:flex-row">
+              <div className="flex gap-3 items-center justify-between sm:flex-row">
                 <span className="text-3xl font-bold text-gray-900 dark:text-white">
                   $149{" "}
                   <del className="italic text-base text-gray-600">$179</del>

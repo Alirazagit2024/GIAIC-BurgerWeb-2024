@@ -25,7 +25,7 @@ export default function Map() {
             ></iframe>
           </div>
         </div>
-        <div className="lg:w-2/3 md:w-2/2 w-full bg-gray-300 rounded-3xl overflow-hidden sm:mr-10 p-6 md:p-10 flex items-end justify-start relative hover md:flex">
+        <div className="lg:w-2/3 md:w-2/2 w-full bg-gray-300 rounded-3xl overflow-hidden sm:mr-10 p-6 md:p-10 flex items-end justify-start relative hover md:flex mobile-map">
           <iframe
             width="100%"
             height="100%"

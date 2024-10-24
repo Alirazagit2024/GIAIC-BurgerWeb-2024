@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Scan() {
   return (
-    <section className="text-gray-600 body-font py-6">
+    <section className="text-gray-600 body-font py-4">
       <h1 className="sm:text-3xl text-center text-2xl py-6 font-bold title-font text-white flex justify-center items-center">
         QUICK SCAN FOR FULL MENU
       </h1>

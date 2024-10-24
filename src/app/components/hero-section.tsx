@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex mt-7 px-5 md:flex-row flex-col-reverse items-center">
         <div className="lg:flex-grow md:w-1/2 lg:px-10 md:px-16 flex justify-around flex-col md:items-start md:text-left md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white title-mobile">
             Welcome to BURGER LAB
           </h1>
           <p className="mb-8 leading-relaxed italic">
@@ -26,6 +26,9 @@ export default function Hero() {
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <h1 className="title-font sm:text-3xl text-3xl mb-4 font-medium text-white text-center title-tab">
+            Welcome to BURGER LAB
+          </h1>
           <Image
             className="object-cover object-center rounded water"
             style={{ filter: "drop-shadow(3px 3px 10px #ffffff)" }}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MenuOverview() {
   return (
-    <section className="text-gray-600 body-font py-6">
+    <section className="text-gray-600 body-font">
       <h1 className="sm:text-3xl text-2xl py-6 font-bold title-font text-white flex justify-center items-center">
         MENU OVERVIEW
       </h1>

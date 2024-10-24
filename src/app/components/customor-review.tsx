@@ -18,7 +18,7 @@ export default function Customer() {
           <div className="w-full max-w-sm border border-gray-200 flex flex-col justify-center items-center rounded-3xl py-3 hover">
             <a href="#">
               <Image
-                src="/images/c1.jfif"
+                src="/images/c1.jpg"
                 className="h-100 rounded-full border-2 border-white"
                 width={200}
                 height={200}
@@ -94,7 +94,7 @@ export default function Customer() {
           <div className="w-full max-w-sm border border-gray-200 flex flex-col justify-center items-center rounded-3xl py-3 hover">
             <a href="#">
               <Image
-                src="/images/c2.jfif"
+                src="/images/c2.jpg"
                 className="h-100 rounded-full border-2 border-white"
                 width={200}
                 height={200}

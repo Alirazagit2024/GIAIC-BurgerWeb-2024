@@ -95,8 +95,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* About */
-
+@media (min-width: 426px){
+  .title-tab {
+    display: none !important;
+  }
+}
 @media (max-width: 426px) {
+  .title-mobile {
+    display: none !important;
+  }
   #our-story {
     background-image: none !important;
   }
@@ -109,9 +116,12 @@ body::-webkit-scrollbar-thumb {
   .g {
     border-radius: 10px !important;
   }
+  .mobile-map {
+    display: none !important;
+  }
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 430px) and (max-width: 1024px) {
   #our-story {
     background-size: cover !important;
   }
