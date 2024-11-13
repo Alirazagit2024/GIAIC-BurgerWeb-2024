@@ -1,13 +1,18 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false); // State for mobile menu
+
   return (
     <nav
       className="bg-black border sm:border-white sm:rounded-full border-r-black border-l-black"
       style={{ boxShadow: "0px 0px 14px 0px rgba(255,255,255,0.75)" }}
     >
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 ">
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-1 rtl:space-x-reverse"
@@ -23,8 +28,9 @@ export default function Navbar() {
             BURGER
           </span>
         </Link>
+
         <div className="flex items-center md:order-2 space-x-3">
-          {/* Search Button */}
+          {/* Search and Profile Buttons */}
           <button
             type="button"
             className="text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 rounded-lg p-2 hover:text-yellow-500 transition-colors"
@@ -63,10 +69,10 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            type="button"
+            onClick={() => setIsOpen(!isOpen)}
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-search"
-            aria-expanded="false"
+            aria-expanded={isOpen ? "true" : "false"}
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -87,7 +93,12 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="hidden md:flex md:order-1 relative">
+        {/* Menu items for desktop */}
+        <div
+          className={`hidden md:flex md:order-1 relative ${
+            isOpen ? "flex" : "hidden"
+          }`}
+        >
           <ul className="flex flex-col p-4 md:p-0 space-y-2 md:space-y-0 md:space-x-2 md:flex-row">
             <li>
               <Link
@@ -155,6 +166,52 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
+        <ul className="flex flex-col justify-center items-center p-4 space-y-2 bg-black text-white">
+          <li>
+            <Link
+              href="/"
+              className="block py-2 px-3 border-b border-white rounded-lg hover:bg-gray-700 hover:border-b-2 hover:border-white hover:text-yellow-500 transition-colors"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/about"
+              className="block py-2 px-3 border-b border-white rounded-lg hover:bg-gray-700 hover:border-b-2 hover:border-white hover:text-yellow-500 transition-colors"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/services"
+              className="block py-2 px-3 border-b border-white rounded-lg hover:bg-gray-700 hover:border-b-2 hover:border-white hover:text-yellow-500 transition-colors"
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/menu"
+              className="block py-2 px-3 border-b border-white rounded-lg hover:bg-gray-700 hover:border-b-2 hover:border-white hover:text-yellow-500 transition-colors"
+            >
+              Menu
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className="block py-2 px-3 border-b border-white rounded-lg hover:bg-gray-700 hover:border-b-2 hover:border-white hover:text-yellow-500 transition-colors"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
